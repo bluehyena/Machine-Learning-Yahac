@@ -47,39 +47,51 @@
 
 ## Chapter 2. Tensorflow
 
-Tensorflow가 사용되는 곳
+### Tensorflow가 사용되는 곳
 
 * Supervised Learning
 	- Regression
 	- Classification
 
-Deep Learning Library
+### Deep Learning Library
 * Tensorflow
 * PyTorch
 * Caffe2
 * Theano
 
-Algorithm
+### Algorithm
 * Decision Tree
 * Random Forest
 * KNN (K-Nearnest Neighbor)
 * SVM (Support Vector Machine)
 * Neural Network Deep Learning
 
-Supervised Learning Process
+### Supervised Learning Process
 1. 과거의 데이터 준비
 2. 모델 구조 생성
 3. 데이터를 모델로 학습(Fit)시킨다.
 4. 모델을 이용한다.
 
-Loss 란?
+### Loss 란?
 * 학습의 진행도를 알려주는 지표
 	- 독립변수를 모델에 넣어 나온 예측값, 실제 결과 값을 이용하여 Loss를 구함.
 	- Loss 는 (예측값 - 결과값)^2 의 평균값임, 
 	- Loss 가 0에 가까워질수록 정확한 모델임.
 
-수식
+### 수식
 * y = w1x1 + w2x2 + ⋯⋯ + w13x13 + b
  - 이 모델은 퍼셉트론(Perceptron) 이라고 부름.
  - 각각의 w들은 가중치(Weight) 라고 부름.
  - b는 편향(Bias)라고 부름.
+ 
+ ### 원 핫 인코딩 (Onehot-encoding)
+* 범주형 데이터를 수치형으로 변환하는 과정
+* 독립변수는 X의 개수
+* 종속변수는 범주형 데이터의 종류수
+
+(+ Softmax, Sigmoid)
+
+### 은닉층 (Hidden Layer)
+* 기존의 Perceptron을 여러개 사용하여 연결하면 됨.
+* 입력(Input Layer)과 출력(Output Layer) 사이에 추가되는 것이 Hidden Layer임.
+* Hidden Layer를 이용하여 Multi Layer를 구현하면 더 정확도 높은 모델을 구현가능.
